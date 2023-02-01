@@ -6,7 +6,7 @@
 	"license": "MIT",
 	"main": "./dist",
 	"scripts": {
-		"build": "tsc && rollup --config"
+		"build": "tsc --noEmit false"
 	},
 	"devDependencies": {
 		"rollup": "^3.12.0",
