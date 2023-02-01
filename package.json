@@ -9,6 +9,9 @@
 	"scripts": {
 		"build": "tsc --noEmit false"
 	},
+	"files": [
+		"dist/"
+	],
 	"devDependencies": {
 		"rollup": "^3.12.0",
 		"typescript": "^4.9.3"
