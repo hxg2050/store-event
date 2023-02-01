@@ -1,14 +1,15 @@
 {
 	"name": "store-event",
 	"private": false,
-	"version": "0.0.4",
+	"version": "0.0.5",
 	"repository": "https://github.com/hxg2050/store-event.git",
 	"type": "module",
 	"license": "MIT",
-	"main": "./dist",
 	"scripts": {
-		"build": "tsc --noEmit false"
+		"build": "tsc -p tsconfig.json && tsc -p tsconfig.cjs.json"
 	},
+	"main": "./dist/esm",
+	"module": "./dist/cjs",
 	"files": [
 		"dist/"
 	],
