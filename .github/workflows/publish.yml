@@ -33,4 +33,4 @@ jobs:
       # - run: yarn build
       - run: npm publish
         env:
-          NODE_AUTH_TOKEN: ${{secrets.NPM_HXG}}
+          NODE_AUTH_TOKEN: ${{secrets.NPM_STORE_EVENT}}
