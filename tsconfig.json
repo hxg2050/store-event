@@ -15,8 +15,8 @@
     "noImplicitReturns": true,
     "skipLibCheck": true,
     "declaration": true,
-    "declarationDir": "dist/esm",
-    "outDir": "dist/esm"
+    // "declarationDir": "as",
+    "outDir": "dist"
   },
   "include": ["src"]
 }
