@@ -10,6 +10,7 @@ export type EventValue<T> = T extends { [p: string]: infer V } ? V extends strin
  * 一个基于订阅/发布模式的状态管理器，可用于状态管理，或者事件管理
  * 当作`事件管理`使用时
  * ```ts
+ * import StoreEmitter from 'store-emitter'
  * // 创建一个管理器
  * const emitter = new Emitter();
  * // 监听jump事件
@@ -21,6 +22,7 @@ export type EventValue<T> = T extends { [p: string]: infer V } ? V extends strin
  * ```
  * 当作`状态管理`使用时
  * ```ts
+ * import StoreEmitter from 'store-emitter'
  * // 创建状态管理器
  * const store = new Emitter();
  * // 设置数据

@@ -1,8 +1,25 @@
 {
 	"name": "store-event",
 	"private": false,
-	"version": "0.0.10",
+	"version": "0.0.11",
 	"repository": "https://github.com/hxg2050/store-event.git",
+	"keywords": [
+		"EventEmitter",
+		"EventEmitter2",
+		"EventEmitter3",
+		"Events",
+		"addEventListener",
+		"addListener",
+		"emit",
+		"emits",
+		"emitter",
+		"event",
+		"once",
+		"pub/sub",
+		"publish",
+		"reactor",
+		"subscribe"
+	],
 	"license": "MIT",
 	"type": "module",
 	"scripts": {
