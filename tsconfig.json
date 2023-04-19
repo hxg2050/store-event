@@ -18,12 +18,11 @@
     "noImplicitReturns": true,
     "skipLibCheck": true,
     "declaration": true,
-    "sourceMap": true,
+    // "sourceMap": true,
     // "declarationDir": "as",
     "outDir": "dist"
   },
   "include": [
-    "src",
-    "test"
+    "src"
   ]
 }
