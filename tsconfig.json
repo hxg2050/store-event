@@ -3,7 +3,10 @@
     "target": "ESNext",
     "useDefineForClassFields": true,
     "module": "ESNext",
-    "lib": ["ESNext", "DOM"],
+    "lib": [
+      "ESNext",
+      "DOM"
+    ],
     "moduleResolution": "Node",
     "strict": true,
     "resolveJsonModule": true,
@@ -15,8 +18,12 @@
     "noImplicitReturns": true,
     "skipLibCheck": true,
     "declaration": true,
+    "sourceMap": true,
     // "declarationDir": "as",
     "outDir": "dist"
   },
-  "include": ["src"]
+  "include": [
+    "src",
+    "test"
+  ]
 }

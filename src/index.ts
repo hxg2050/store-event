@@ -52,6 +52,10 @@ export class StoreEmitter<T extends string = string> {
     protected _once: EmitterKeyValue = {};
     protected _remove = [];
 
+    constructor() {
+
+    }
+
     /**
      * 监听一次
      * ```ts
@@ -153,7 +157,7 @@ export class StoreEmitter<T extends string = string> {
             return this._data[name];
         }
         if (typeof value === 'function') {
-            return this.data(name, value(this._data[name]))
+            return this.data(name, value(this._data[name]));
         }
         this._data[name] = value;
         // console.log(this._on[name], name, value);
@@ -216,10 +220,10 @@ export class StoreEmitter<T extends string = string> {
                 remove_list.push(i);
             }
         }
-
+        const length = remove_list.length;
         // 倒序删除
-        for (let i = remove_list.length - 1; i >= 0; i--) {
-            eventList.splice(i, 1);
+        for (let i = length - 1; i >= 0; i--) {
+            eventList.splice(remove_list[i], 1);
         }
     }
 
